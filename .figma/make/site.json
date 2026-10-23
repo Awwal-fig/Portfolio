@@ -1,0 +1,10 @@
+{
+  "description": "Delivers a responsive web interface optimized for both desktop and mobile, enhancing user experience across devices with seamless design adaptation.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
