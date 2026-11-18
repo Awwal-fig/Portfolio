@@ -1,10 +1,11 @@
 {
-  "description": "Delivers a responsive web interface optimized for both desktop and mobile, enhancing user experience across devices with seamless design adaptation.",
+  "description": "Portfolio of Awwal Muhammed Bello, a product designer in Nigeria designing web and mobile products across EdTech, FinTech and legal tech, from research to shipped prototypes.",
   "robots": {
-    "index": false
+    "index": true
   },
   "accessibility": {
     "addBypassLinks": false,
     "ignoreReducedMotion": false
-  }
+  },
+  "title": "Awwal Muhammed Bello — Product Designer"
 }

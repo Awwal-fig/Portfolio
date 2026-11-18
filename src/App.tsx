@@ -18,8 +18,9 @@ const projects: ProjectData[] = [
     title: "Barready",
     year: "2026",
     href: "https://barready.website",
+    intro: "Founder and product designer",
     description:
-      "I'm the founder of Barready, we aim to help Nigeria bar aspirant achieve success in there bar finals. It's in progress and is coming soon.",
+      "Barready helps Nigerian Bar aspirants prepare for the Bar Finals with MCQ, essay and drafting practice and checklist-based feedback. I wrote the product spec, designed the app and built it with Claude Code. The waitlist is live and the full product is coming soon.",
     images: ["aec00.png", "9c76e.png", "25838.png"],
     widths: [172.797, 164.57, 164.57],
   },
@@ -29,9 +30,9 @@ const projects: ProjectData[] = [
     year: "2026",
     caseStudyHref:
       "https://www.figma.com/deck/2pPLuJQbpFiJk2xm7pi3ud/KoboBack-%E2%80%94-Case-Study?node-id=0-1&t=uBADNCCXMb16tzJ4-1",
-    intro: "I designed KoboBack....",
+    intro: "Product design and product management · Concept",
     description:
-      "KoboBack is a web app that helps Nigerians get money back from failed transfers and wrong bank debits. It turns the Central Bank of Nigeria's own refund rules into a ready to send complaint, a deadline clock and a clear path to escalate.",
+      "KoboBack is a web app that helps Nigerians get money back from failed transfers and wrong bank debits. I led the research, flows, 23 screens and UX copy, turning the Central Bank of Nigeria's own refund rules into a ready-to-send complaint, a deadline clock and a clear path to escalate.",
     images: ["f9cd4.png", "4de10.png"],
     widths: [154, 125.969],
   },
@@ -42,9 +43,9 @@ const projects: ProjectData[] = [
     href: "https://rlkids.ai",
     caseStudyHref:
       "https://www.figma.com/deck/ah0k0icJYiaU65u60Mdcss/RLKids-FAQ-%E2%80%94-Case-Study?node-id=0-1&t=GY7sJJ8IsmqNtOKW-1",
-    intro: "Collaborated with Team Members",
+    intro: "Product designer, with the Tobams Group team",
     description:
-      "RLKids is an AI-powered EdTech app where kids learn critical future skills through gamified lessons. Explore topics like AI, finance, and sustainability using interactive tools, digital reads, and student workbooks.",
+      "RLKids is an AI-powered EdTech platform where kids learn future skills like AI, finance and sustainability through gamified lessons. I redesigned its help centre, splitting one long FAQ into General, Parent and Child hubs so each audience finds its own answers, without breaking a single existing link. Live on rlkids.ai.",
     images: ["02859.png", "97d25.png"],
     widths: [149.469, 149.383],
   },
@@ -55,8 +56,9 @@ const projects: ProjectData[] = [
     href: "https://dead-and-wounded-omega.vercel.app/",
     caseStudyHref:
       "https://www.figma.com/deck/f1Bf1cIhkt9WSoi3bCNo3A/Dead---Wounded-%E2%80%94-Case-Study-v2?node-id=0-1&t=3WPkDaJHeLhewt48-1",
+    intro: "Designed and built",
     description:
-      "Dead & Wounded is a number deduction duel game where every guess brings you closer to cracking the code. Play with friends or play with COM",
+      "Dead & Wounded is a number deduction duel game where every guess brings you closer to cracking the code. I designed and built it: online duels with friends through room codes, three AI opponents, and a print-inspired look that teaches the rules at a glance.",
     images: ["549d5.png", "5791f.png", "dcfc3.png", "1a93e.png"],
     widths: [155.875, 155.875, 155.875, 155.875],
   },
@@ -64,8 +66,9 @@ const projects: ProjectData[] = [
     slug: "keeb",
     title: "KEEB",
     year: "2023",
+    intro: "UI/UX designer",
     description:
-      "KEEB is a two-sided platform — a mobile app for customers to shop from storefront owners and book services from tradespeople like mechanics and plumbers, paired with a web app for storefront owners and service providers to manage their listings and operations.",
+      "KEEB is a two-sided platform: a mobile app for customers to shop from storefront owners and book tradespeople like mechanics and plumbers, paired with a web app for storefront owners and service providers to manage their listings and operations. I designed both, from definition to prototype.",
     href: "https://www.figma.com/proto/W6VdjuosMllFyLu8pPUelN/Keeb-App--Copy-?node-id=60-29830&t=zSTuswbjajpuMr5Z-1",
     images: ["keeb-main.png"],
     widths: [144],
@@ -79,25 +82,25 @@ const roles = [
     title: "Product Designer at First HighTower",
     location: "Lagos, Nigeria",
     bullets: [
-      "Designed intuitive, user-centred interfaces for the High Court's justice management system, focusing on clarity, accessibility, and workflow efficiency.",
+      "Design intuitive, user-centred interfaces for the High Court's justice management system, focusing on clarity, accessibility, and workflow efficiency.",
       "Create clean layouts, scalable design systems, and seamless user journeys for modules like Legal Counsels, Post Judgment, Probate, and Appeals among other profiles.",
       "Translate complex legal processes into simple, visually structured screens that improve user experience for judges, registrars, administrative staff, legal counsel, and affidavit flow.",
-      "Designed an incubation platform for affiliate universities (EIBIC) with the Federal Ministry of Education of Nigeria",
+      "Designed an incubation platform for affiliate universities (EIBIC) with the Federal Ministry of Education of Nigeria.",
     ],
   },
   {
-    date: "Jan 2026 — 2026",
+    date: "Jan 2026 — Aug 2026",
     title: "Product Designer at Tobams Group",
-    location: "Lagos Nigeria",
+    location: "Lagos, Nigeria",
     description:
-      "I worked as a product designer at Tobams Group to reimagine the user interface and create new products. I worked closely with the design team lead ",
+      "I worked as a product designer at Tobams Group, reimagining existing interfaces and designing new products, including the RLKids help centre, in close collaboration with the design team lead.",
   },
   {
     date: "2023 — 2024",
     title: "UI/UX Designer at KEEB",
     location: "Lagos, Nigeria",
     description:
-      "At KEEB, I worked hand to hand with a team member and stakeholders to define and design the KEBB mobile app and WebApp for storefront owners.",
+      "At KEEB, I worked hand in hand with a teammate and stakeholders to define and design the KEEB mobile app and the web app for storefront owners.",
   },
 ]
 
@@ -866,7 +869,10 @@ function Project({
                 } as React.CSSProperties
               }
             >
-              <img alt="" src={`/assets/${image}`} />
+              <img
+                alt={`${project.title} screen ${index + 1} of ${project.images.length}`}
+                src={`/assets/${image}`}
+              />
             </div>
           ))}
         </div>
@@ -962,14 +968,17 @@ export default function App() {
           <div className="about">
             <p className="section-title">About</p>
             <p>
-              I'm a product designer who puts heart in solving real world
-              problems through design to achieve better user interface and
-              experience.
+              I'm a product designer who turns complex, rule-heavy processes
+              into simple products people trust. I've designed workflows for a
+              High Court's case management system, an EdTech help centre for
+              thousands of young learners, and a fintech tool built on the
+              Central Bank of Nigeria's refund rules.
             </p>
             <p>
-              I’m currently learning the other side of design with Claude Code
-              to understand what happens after handoff and how to collaborate
-              better with my dev
+              I was called to the Nigerian Bar in 2026, so law and regulation
+              are part of how I design. I also build: I prototype and ship with
+              Claude Code to understand what happens after handoff and work
+              better with developers.
             </p>
           </div>
           <SocialCallout />
